@@ -1,6 +1,94 @@
-h1 {
-    color: rosybrown;
+h2 {
+    font-weight: bold;
+}
+
+p{
+    font-weight: bold;
+    font-size: large;
 }
 img{
     max-width: 200px;
 }
+* {
+    padding: 0;
+    margin: 0; }
+
+  @font-face {
+    font-family: "Martel-Regular";
+    src: url(../Fonts/Martel-Regular.ttf);
+    font-family: "Martel-Light";
+    src: url(../Fonts/Martel-ExtraLight.ttf); }
+  
+  /*Colores*/
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Martel-Regular";
+    line-height: 1.8;
+    background-color: #F5EFCD;
+    color: #6FA687; }
+    body h1 {
+      font-size: 20px; }
+    body h2 {
+      font-size: 15px; }
+  
+  .margin {
+    margin-top: 20px; }
+  
+  h1 {
+    font-weight: bold; }
+  
+  iframe {
+    width: 300px;
+    height: 200px; }
+  
+  .navbar {
+    background-color: #F27E93;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px; }
+    .navbar a {
+      color: #fcf7f8; }
+      .navbar a:hover {
+        background-color: #6FA687;
+        color: #F5EFCD; }
+  
+  .navbar-brand {
+    text-decoration: overline;
+    color: #fcf7f8;
+    text-align: center; }
+  
+  .formulario div {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #FFE3E7; }
+  
+  .tabla__tienda {
+    background-color: #FFE3E7;
+    margin: 1%;
+    color: #6FA687; }
+  
+  .tabla__caption {
+    font-style: italic;
+    font-size: small;
+    color: #F27E93;
+    text-align: center; }
+  
+  .footer {
+    margin-top: 8px;
+    background-color: #F2B6C1;
+    color: #fcf7f8;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    width: 100%;
+    bottom: 0; }
+    .footer a {
+      text-decoration: none;
+      color: #fcf7f8; }
+      .footer a:hover {
+        color: #6FA687; }
