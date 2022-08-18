@@ -16,22 +16,51 @@
 <body>
     <header class="navbar navbar-expand-sm navbar-dark">
         <h1 class="navbar-brand" class="container-fluid">CHESCA</h1>
+        <button id="carrito" type="button" class="btn btn-primary btn-lrg">Carrito</button>
     </header>
     <main>
-        <p class="margin">Bienvenidos a la tienda online</p>
-        <div class="row">
+        <div class="main container text-center">
+            <h2 class="margin">Bienvenidos a la tienda online</h2>
             <h2>Productos</h2>
-            <a>Mate Personalizado</a>
-            <a>$1400</a>
-            <div class="col-md-3">
-                <img src="./img/MatePersonalizado.jpeg"
-                    alt="Mate artesanal con dibujo de El David de Miguel Angel con una flor rosa">
+            <div class="row producto">
+                <div id= item class="col-md-4">
+                    <img src="./img/MatePersonalizado.jpeg" class="img-responsive" style="width:100%"
+                        alt="Mate artesanal con dibujo de El David de Miguel Angel con una flor rosa">
+                    <h3>Mate Personalizado</h3>
+                    <p>$1400</p>
+                    <button id="mateBtn" type="button" class="btn btn-primary btn-sm">Comprar</button>
+                </div>
+                <div id= item class="col-md-4">
+                    <img src="./img/IlustraciónPersonalizada.jpeg" class="img-responsive" style="width:100%"
+                        alt="Ilustración de una mujer con su mascota en un portarretrato">
+                    <h3>Ilustración personalizada</h3>
+                    <p>$1500</p>
+                    <button id="ilusBtn" type="button" class="btn btn-primary btn-sm">Comprar</button>
+                </div>
+                <div id= item class="col-md-4">
+                    <img src="./img/PrintPErsonalizado.jpeg" class="img-responsive" style="width:100%"
+                        alt="Ilustración de un perro cruzando la calle">
+                    <h3>Print personalizado</h3>
+                    <p>$1200</p>
+                    <button id="printBtn" type="button" class="btn btn-primary btn-sm">Comprar</button>
+                </div>
             </div>
-            <a>Ilustración personalizada</a>
-            <a>$1500</a>
-            <div class="col-md-3">
-                <img src="./img/IlustraciónPersonalizada.jpeg"
-                    alt="Ilustración de una mujer con su mascota en un portarretrato">
+
+            <div class="row producto">
+                <div id= item class="col-md-4">
+                    <img src="./img/CuadroPersonalizado.jpeg" class="img-responsive" style="width:100%"
+                        alt="Cuadro pintado de la luna ">
+                    <h3>Cuadro personalizado</h3>
+                    <p>$2000</p>
+                    <button id="cuadroBtn" type="button" class="btn btn-primary btn-sm">Comprar</button>
+                </div>
+                <div id= item class="col-md-4">
+                    <img src="./img/MiniBastidorPersonalizado.jpeg" class="img-responsive" style="width:100%"
+                        alt="Mini cuadro de un perro">
+                    <h3>Mini Bastidor personalizado</h3>
+                    <p>$1900</p>
+                    <button id="miniBBtn" type="button" class="btn btn-primary btn-sm">Comprar</button>
+                </div>
             </div>
         </div>
     </main>
