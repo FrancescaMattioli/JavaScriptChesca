@@ -19,6 +19,13 @@
         <button id="carrito" type="button" class="btn btn-primary btn-lrg">Carrito</button>
     </header>
     <main>
+        <form>
+            <fieldset>
+                <label for="nombre"> Escriba su nombre:</label>
+                <input type="text" id="nombre"/>
+                <button type="button" onclick="saludo()">Enviar</button>
+            </fieldset>
+        </form>
         <div class="main container text-center">
             <h2 class="margin">Bienvenidos a la tienda online</h2>
             <h2>Productos</h2>
@@ -62,6 +69,16 @@
                     <button id="miniBBtn" type="button" class="btn btn-primary btn-sm">Comprar</button>
                 </div>
             </div>
+        </div>
+        <!-- Carrito -->
+        <div id="items" class="col-sm-8 row"></div>
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+                    <button id="boton-vaciar" class="btn">Vaciar</button>
+            </aside>
         </div>
     </main>
     <footer class="footer container-fluid text-center">

@@ -21,48 +21,73 @@ const articulos = [{
     precio: +1900
 }]
 
+let carrito = []
+
+//const suma = (a, b) => (a + b)
+//let totalCarrito = suma(0, 0)
+
 //Funcion botones comprar
 let btnMate = document.getElementById("mateBtn")
 btnMate.addEventListener("click", respuestaCompraMate)
+
 function respuestaCompraMate() {
     console.log(articulos[0]);
+    carrito.push(articulos[0])
 }
 
 let btnIlus = document.getElementById("ilusBtn")
 btnIlus.addEventListener("click", respuestaCompraIlus)
+
 function respuestaCompraIlus() {
     console.log(articulos[1]);
+    carrito.push(articulos[1])
 }
 
 let btnPrint = document.getElementById("printBtn")
 btnPrint.addEventListener("click", respuestaCompraPrint)
+
 function respuestaCompraPrint() {
     console.log(articulos[2]);
+    carrito.push(articulos[2])
 }
 
 let btnCuadro = document.getElementById("cuadroBtn")
 btnCuadro.addEventListener("click", respuestaCompraCuadro)
+
 function respuestaCompraCuadro() {
     console.log(articulos[3]);
+    carrito.push(articulos[3])
 }
 
 let btnMiniB = document.getElementById("miniBBtn")
 btnMiniB.addEventListener("click", respuestaCompraMiniB)
+
 function respuestaCompraMiniB() {
     console.log(articulos[4]);
+    carrito.push(articulos[4])
 }
 
 //Funcion carrito
 let btnCarrito = document.getElementById("carrito")
 btnCarrito.addEventListener("click", respuestaCarrito)
+
 function respuestaCarrito() {
-    console.log("Tu carrito: ");
+    console.log(carrito)
 }
 
-//Suponiendo la compra de 1 ilustracion y 1 print:
+function saludo(){
+    var nombre = document.getElementById("nombre");
+    var username = nombre.value;
+    alert("Bienvenid@ "+ username);
+}
+
+localStorage.setItem("nombre", nombre)
+
+//localStorage.clear()
+//Suma carrito:
 /*const suma = (a, b) => (a + b)
 
-let totalCarrito = suma(articulos[1].precio, articulos[2].precio)
+let totalCarrito = suma()
 
 if (totalCarrito !== 0) {
     console.log(totalCarrito);
