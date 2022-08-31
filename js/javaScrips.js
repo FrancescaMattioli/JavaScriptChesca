@@ -21,10 +21,8 @@ const articulos = [{
     precio: +1900
 }]
 
-let carrito = []
 
-//const suma = (a, b) => (a + b)
-//let totalCarrito = suma(0, 0)
+//                         si no es nulo lo parsea y guarda   si es falsy retorna el array
 
 //Funcion botones comprar
 let btnMate = document.getElementById("mateBtn")
@@ -75,22 +73,32 @@ function respuestaCarrito() {
     console.log(carrito)
 }
 
-function saludo(){
-    var nombre = document.getElementById("nombre");
-    var username = nombre.value;
-    alert("Bienvenid@ "+ username);
-}
+const carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
-localStorage.setItem("nombre", nombre)
+let btnVaciar = document.getElementById("boton-vaciar")
+
+btnVaciar.addEventListener('click', function () {
+    Swal.fire({
+        title: 'Estas seguro que deseas eliminar?',
+        text: "",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Eliminado',
+                'Se eliminó tu carrito :(',
+                'success'
+            )
+        }
+    })
+})
+
 
 //localStorage.clear()
+
 //Suma carrito:
-/*const suma = (a, b) => (a + b)
-
-let totalCarrito = suma()
-
-if (totalCarrito !== 0) {
-    console.log(totalCarrito);
-}*/
-
-//No se como hacer que al apretar el carrito sume los pedidos que se crean en la consola. Y que luego muestre el totalCarrito.
+const suma = (a, b) => (a + b)
