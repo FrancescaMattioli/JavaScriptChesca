@@ -102,3 +102,26 @@ btnVaciar.addEventListener('click', function () {
 
 //Suma carrito:
 const suma = (a, b) => (a + b)
+
+/*fetch('https://jsonplaceholder.typicode.com/posts')
+    .then( (resp) => resp.json() )
+    .then( (data) => {
+        console.log( data[8].title )
+        console.log( data[7].body )
+    })
+
+*/
+const datosDeInt = document.getElementById("datos")
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then( (resp) => resp.json() )
+    .then( (json) => {
+        json.forEach((post) => {
+            const li = document.createElement('li')
+            li.innerHTML = `
+                <h4>${post.title}</h4>
+                <p>${post.body}</p>
+            `
+            datosDeInt.append(li)
+        })
+    })
