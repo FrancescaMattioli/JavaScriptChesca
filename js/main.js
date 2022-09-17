@@ -16,7 +16,7 @@ const articulos = [
         id: 3,
         nombre: 'Print Personalizado',
         precio: 1200,
-        imagen: './img/PrintPersonalizado.jpeg'
+        imagen: './img/PrintPErsonalizado.jpeg'
     },
     {
         id: 4,
