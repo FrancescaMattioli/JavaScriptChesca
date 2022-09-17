@@ -30,7 +30,7 @@ btnMate.addEventListener("click", respuestaCompraMate)
 
 function respuestaCompraMate() {
     console.log(articulos[0]);
-    carrito.push(articulos[0])
+    carrito.push(articulos[0].precio)
 }
 
 let btnIlus = document.getElementById("ilusBtn")
@@ -38,7 +38,7 @@ btnIlus.addEventListener("click", respuestaCompraIlus)
 
 function respuestaCompraIlus() {
     console.log(articulos[1]);
-    carrito.push(articulos[1])
+    carrito.push(articulos[1].precio)
 }
 
 let btnPrint = document.getElementById("printBtn")
@@ -46,7 +46,7 @@ btnPrint.addEventListener("click", respuestaCompraPrint)
 
 function respuestaCompraPrint() {
     console.log(articulos[2]);
-    carrito.push(articulos[2])
+    carrito.push(articulos[2].precio)
 }
 
 let btnCuadro = document.getElementById("cuadroBtn")
@@ -54,7 +54,7 @@ btnCuadro.addEventListener("click", respuestaCompraCuadro)
 
 function respuestaCompraCuadro() {
     console.log(articulos[3]);
-    carrito.push(articulos[3])
+    carrito.push(articulos[3].precio)
 }
 
 let btnMiniB = document.getElementById("miniBBtn")
@@ -62,7 +62,7 @@ btnMiniB.addEventListener("click", respuestaCompraMiniB)
 
 function respuestaCompraMiniB() {
     console.log(articulos[4]);
-    carrito.push(articulos[4])
+    carrito.push(articulos[4].precio)
 }
 
 //Funcion carrito
